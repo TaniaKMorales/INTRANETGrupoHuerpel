@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vista de Usuarios</title>
+
+    <!-- Fuentes-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!--Estilos-->
+    <link href="css/principal.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" class>
+
+    <!-- envoltorio -->
+    <div id="wrapper">
+
+        <!-- Pestaña lateral -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Inicio de pestaña lateral -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">Bienvenido</div>
+            </a>
+
+            <!--Avatar-->
+            <div class="text-center">
+                <img src="img/avatar.svg" class="rounded-circle img-thumbnail">
+            </div>
+
+            <!-- Principal -->
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html">
+                    <i class="fa fa-home"></i>
+                    <span class="text-center">Principal</span></a>
+            </li>
+
+            <!-- Divisor -->
+            <hr class="sidebar-divider">
+
+            <!-- Titulo -->
+            <div class="sidebar-heading">
+                Administracion
+            </div>
+
+            <!--Opciones de la pestaña perfil-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-user-circle fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <span>Perfil</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Modificar perfil:</h6>
+                        <a class="collapse-item" href="perfil.html">Cuenta</a>
+                        <a class="collapse-item" href="perfil.html">Foto de perfil</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Opciones menu de Seguridad -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fa fa-exclamation-triangle fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <span>Seguridad</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="view_roles.html">Roles</a>
+                        <a class="collapse-item" href="utilities-border.html">Acceso</a>
+                        <a class="collapse-item" href="view_users.html">Usuario</a>
+                        <a class="collapse-item" href="utilities-other.html">Usuario por rol</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divisor -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+
+        </ul>
+        <!-- Fin de la barra lateral -->
+
+        <!-- Envoltorio del contenido -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Contenido principal -->
+            <div id="content">
+
+                <!-- Barra superior -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Navegacion de la barra superior -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Notificaciones -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Contador -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Despliegue de notifiaciones -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notificaciones
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Enero 6, 2022</div>
+                                        <span class="font-weight-bold">Un nuevo evento está cerca!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fa fa-info-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Enero 7, 2022</div>
+                                        Solicitaste informacion acerca de un evento
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Enero 8, 2022</div>
+                                        Se encontro un manejo extraño en tu cuenta
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las
+                                    notifiaciones</a>
+                            </div>
+                        </li>
+
+
+                        <!-- Informacion del usuario -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tania K. Morales</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Despliegue de opciones -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Ajustes
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html" data-toggle="modal"
+                                    data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cerrar Sesion
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- Fin de la barra superior -->
+
+                <!-- Contenido de la pagina -->
+                <div class="container-fluid">
+
+                    <!-- Titulo -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Usuarios</h1>
+                    </div>
+
+                    <!-- Contenido de la columna-->
+
+                    <div class="container-fluid">
+
+                        <!-- Area del cuadro -->
+                        <div class="container-fluid">
+                            <div class="card shadow mb-4">
+                                <!-- Titulo del cuadro -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Control de Usuarios</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Opciones:</div>
+                                            <a class="dropdown-item" href="#">Ordenar A-Z</a>
+                                            <a class="dropdown-item" href="#">Ordenar Z-A</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="javascript:location.reload()">Actualizar</a>
+                                            <!-- <a class="dropdown-item" href="#">Actualizar</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Contenido del cuadro -->
+                                <div class="card-body">
+                                    <div class="responsive-table">
+                                        <table class="table caption-top">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Usuario</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Fecha de Activación</th>
+                                                    <th scope="col">Fecha de Cierre</th>
+                                                    <th scope="col"> </th>
+                                                    <th scope="col"> </th>
+                                                    <th scope="col"> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Activo</td>
+                                                    <td>01/01/01</td>
+                                                    <td>02/01/01</td>
+                                                    <td><i class="fas fa-edit"></i></td>
+                                                    <td><i class="fas fa-trash"></i></td>
+                                                    <td><i class="fas fa-envelope"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Desactivado</td>
+                                                    <td>01/01/01</td>
+                                                    <td>02/01/01</td>
+                                                    <td><i class="fas fa-edit"></i></td>
+                                                    <td><i class="fas fa-trash"></i></td>
+                                                    <td><i class="fas fa-envelope"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Larry</td>
+                                                    <td>Activado</td>
+                                                    <td>01/01/01</td>
+                                                    <td>02/01/01</td>
+                                                    <td><i class="fas fa-edit"></i></td>
+                                                    <td><i class="fas fa-trash"></i></td>
+                                                    <td><i class="fas fa-envelope"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin del contenido principal -->
+
+                    <!-- Inicio de pie de pagina -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Grupo Huerpel 2022. Dpto. de Digitalización</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Final del pie de pagina -->
+
+                </div>
+                <!-- Final del envoltorio -->
+
+            </div>
+            <!-- Final del envoltorio -->
+
+            <!-- Cerrar Sesion-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Seguro que quieres salir?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Recuerda que al cerrar sesion, deberas volver a iniciar para visualizar
+                            la informacion nuevamente</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-primary" href="login.html">Salir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+
+            <!-- Page level plugins -->
+            <script src="vendor/chart.js/Chart.min.js"></script>
+
+            <!-- Page level custom scripts -->
+            <script src="js/demo/chart-area-demo.js"></script>
+            <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
