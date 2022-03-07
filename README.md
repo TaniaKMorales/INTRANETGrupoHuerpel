@@ -1,2 +1,0 @@
-# IntranetGrupoHuerpel
- Equipo de Digitalizacion
