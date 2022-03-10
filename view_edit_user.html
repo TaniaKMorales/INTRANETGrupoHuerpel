@@ -204,6 +204,10 @@
                           <input type="text" placeholder="Apellidos" />
                         </div>
                         <div class="input-field">
+                          <i class="fas fa-briefcase"></i>
+                          <input type="text" placeholder="Cargo" />
+                        </div>
+                        <div class="input-field">
                           <i class="fas fa-phone"></i>
                           <input type="phone" placeholder="Telefono" />
                         </div>
@@ -211,11 +215,6 @@
                           <i class="fas fa-at"></i>
                           <input type="email" id="email" placeholder="Email">
                         </div>
-                        <!-- <div class="input-field">
-                          <i class="fas fa-search-location"></i> 
-                          <input type="hidden" id="Cede" placeholder="Cede">
-                          
-                        </div>  -->
                           <select class="input-field" id="location">
                             <option value="ange">Angelopolis</option>
                             <option value="sm">San Manuel</option>
@@ -226,17 +225,28 @@
                             <option value="tul">Tulancingo</option>
                             <option value="hua">Huauchinango</option>
                           </select>
-
-                          <!---<input type="text" class="form-control" id="location" placeholder="Puebla/Apizaco/Pachuca">--->
-                       
                         <div class="input-field">
                           <i class="fas fa-lock"></i>
                           <input type="password" placeholder="Contraseña" />
                         </div>
-                        <button class="btn btn-md btn-success pull-right" type="submit">
-                          <i class="fas fa-check-circle"></i>
-                          Guardar
-                        </button>
+                        <table class="table caption-top">
+                          <tbody>
+                            <thead>
+                              <th scope="col"><button class="btn btn-md btn-success pull-right" type="submit">
+                                <i class="fas fa-check-circle"></i>
+                                Guardar
+                              </button>
+                              </th>
+                              <th scope="col"><button class="btn btn-md btn-danger" type="reset">
+                                <i class="fas fa-times"></i>
+                                Cancelar
+                              </button>
+                            </th>
+                            </thead>
+                            
+                        </tbody>
+                          
+                        </table>
                       </form>
                       <!-- Boton de Cambio de foto de perfil -->
                       <div class="panels-container">
@@ -253,11 +263,11 @@
                             <p>
                               CARGO
                             </p>
-                            <!-- <input type="file" class="text-center center-block file-upload"> -->
-                            <select class="input-field" id="location">
-                                <option value="ange">Administrador</option>
-                                <option value="sm">Usuario</option>
-                                <option value="ch">...</option>
+                            
+                            <select class="input-field" id="rol">
+                                <option value="admin">Administrador</option>
+                                <option value="user">Usuario</option>
+                                <option value="otros">...</option>
                               </select>
                           </div>
                         </div>
