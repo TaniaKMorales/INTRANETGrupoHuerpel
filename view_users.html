@@ -253,7 +253,10 @@
                                                     <td>01/01/01</td>
                                                     <td>02/01/01</td>
                                                     <td><a href="view_edit_user.html"><i class="fas fa-edit" ></i></a></td>
-                                                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                                                    
+                                                    <td><a href="#" data-toggle="modal"
+                                                        data-target="#deleteModal">
+                                                        <i class="fas fa-trash"></i></a></td>                                              </a></td>
                                                     <td><a href="#"><i class="fas fa-envelope"></i></a></td>
                                                 </tr>
                                                 <tr>
@@ -321,6 +324,28 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Eliminar usuario -->
+            <div class="modal fade" id="deleteModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true0">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            
+                            <h4 class="modal-title">¿Estás seguro?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>¿Seguro que quieres borrar este elemento?</p>
+                            <p class="text-warning"><small>Si lo borras, nunca podrás recuperarlo.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <a class="btn btn-danger" href="javascript:location.reload()">Salir</a>
+                            <!-- <button type="button" class="btn btn-danger" data-target="">Eliminar</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
             <!-- Bootstrap core JavaScript-->
             <script src="vendor/jquery/jquery.min.js"></script>
